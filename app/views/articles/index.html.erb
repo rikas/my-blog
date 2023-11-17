@@ -2,6 +2,14 @@
 
 <h1>Articles</h1>
 
+<%= cl_image_tag("xcgiakame7huy2q1tcx6", width: 400, height: 300, crop: :fill) %>
+<%= cl_image_tag("xcgiakame7huy2q1tcx6", :transformation=>[
+  {:gravity=>"face", :height=>400, :width=>400, :crop=>"crop"},
+  {:radius=>"max"},
+  {:width=>200, :crop=>"scale"},
+  {:fetch_format=>:auto}
+  ]) %>
+
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>

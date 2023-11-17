@@ -2,9 +2,11 @@ source "https://rubygems.org"
 
 ruby "3.1.1"
 
-gem "bootstrap", "~> 5.2"
+gem "bootstrap", "~> 5.2" # this will install bootstrap 5.*
 gem "simple_form"
 gem "sassc-rails" # Uncomment this line
+gem "dotenv-rails"
+gem "cloudinary" # installs the latest version of the gem
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
